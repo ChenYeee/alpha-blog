@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Create a new article</title>
+    </head>
+    <body>
+        <%= form_for @article do |f| %>
+        <p>
+            <%= f.label :title %><br>
+            <%= f.text_field :title %>
+        </p>
+        <p>
+            <%= f.label :description %><br>
+            <%= f.text_field :description %>
+        </p>
+        <p>
+            <%= f.submit %>
+        </p>
+        <% end %>
+    </body>
+</html>
