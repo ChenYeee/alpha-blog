@@ -2,12 +2,12 @@
 <html lang="en" dir="ltr">
     <head>
         <meta charset="utf-8">
-        <title>Create a new article</title>
+        <title></title>
     </head>
     <body>
-        <h1>Create an article</h1>
+        <h1>Edit existing article</h1>
         <% if @article.errors.any? %>
-        <h2>The following errors prevented the new article from getting created</h2>
+        <h2>The following errors prevented the new article from getting edited</h2>
         <ul>
             <% @article.errors.full_messages.each do |msg| %>
                 <li><%= msg %></li>
